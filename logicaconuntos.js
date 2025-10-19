@@ -69,3 +69,14 @@ function añadirElementos(conjunto, elemento) {
     }
   }
 }
+
+
+//DIFERENCIA SIMETRICA
+function diferenciaSimetrica(conjunto1, conjunto2){
+  const dif12 = diferencia(conjunto1, conjunto2);
+  const dif21 = diferencia(conjunto2, conjunto1);
+
+  const conjuntoDiferenciaSimetrica = unirConjuntos(dif12,dif21);
+
+  return conjuntoDiferenciaSimetrica;
+}
